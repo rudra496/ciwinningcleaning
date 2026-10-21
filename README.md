@@ -1,11 +1,11 @@
-# Fly Cleaner — Official Website
+# CI Winning Cleaning — Official Website
 
-Professional website for **Fly Cleaner** — *Professional Cleaning Services for All
+Professional website for **CI Winning Cleaning** — *Professional Cleaning Services for All
 Facilities*. Seven specialist cleaning services for **homes and businesses across
 the UK**: domestic, end of tenancy, deep cleaning, commercial & office, carpet &
 upholstery, Airbnb & holiday lets, plus additional extras.
 
-**Live site:** https://rudra496.github.io/flycleaner/
+**Live site:** https://rudra496.github.io/ciwinningcleaning/
 
 ## Pages
 | File | Purpose |
@@ -30,7 +30,7 @@ WhatsApp or email. Channels are configured in **`js/config.js`**:
 ```js
 window.FLY_CONFIG = {
   whatsapp: "",   // international format, digits only, e.g. "447700900123"
-  email: ""       // e.g. "bookings@flycleaner.co.uk"
+  email: ""       // e.g. "bookings@ciwinningcleaning.co.uk"
 };
 ```
 
@@ -64,4 +64,4 @@ balance, required content and a banned-claims list (no unverified insurance/
 vetting/guarantee claims can ship). Run: `python tools/static_audit.py`
 
 ---
-© Fly Cleaner. All rights reserved.
+© CI Winning Cleaning. All rights reserved.

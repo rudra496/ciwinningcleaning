@@ -1,5 +1,5 @@
 /* ============================================================
-   FLY CLEANER — site interactions
+   CI WINNING CLEANING — site interactions
    ============================================================ */
 (function () {
   "use strict";
@@ -183,7 +183,7 @@
       }
 
       bookingText = [
-        "Hello Fly Cleaner! I would like to book a cleaning service.",
+        "Hello CI Winning Cleaning! I would like to book a cleaning service.",
         "",
         "Service: " + data.service,
         "Property type: " + data.property,

@@ -1,8 +1,8 @@
-"""Static integrity audit for Fly Cleaner site — parses real artifacts (L-118)."""
+"""Static integrity audit for CI Winning Cleaning site — parses real artifacts (L-118)."""
 import re, os, sys
 from html.parser import HTMLParser
 
-ROOT = r"E:\zcode-data\flycleaner-website"
+ROOT = r"E:\zcode-data\ciwinningcleaning-website"
 PAGES = ["index.html", "services.html", "booking.html", "about.html"]
 fails, warns = [], []
 
@@ -78,7 +78,7 @@ for pg in PAGES:
 
 # ---- 5. required content ----
 must_have = {
-    "index.html": ["Fly Cleaner", "Domestic Cleaning", "End of Tenancy", "Deep Cleaning",
+    "index.html": ["CI Winning Cleaning", "Domestic Cleaning", "End of Tenancy", "Deep Cleaning",
                    "Commercial", "Carpet", "Airbnb", "From £18/hr", "booking.html",
                    "£120", "£30/room", "£40", "£100", "Bonanza", "Scotland", "data-promo-end",
                    "CI WINNING LTD"],
@@ -87,7 +87,7 @@ must_have = {
                       "£18–£25 per hour", "£120–£350+", "£25–£40", "£20–£35", "£30–£60", "£40–£100+"],
     "booking.html": ["booking-form", "bf-property", "bf-bedrooms", "bf-postcode", "bf-date",
                      "summary-list", "send-whatsapp", "send-email", "channel-note"],
-    "about.html": ["Fly Cleaner", "areas", "booking.html"],
+    "about.html": ["CI Winning Cleaning", "areas", "booking.html"],
 }
 for pg, needles in must_have.items():
     html = open(os.path.join(ROOT, pg), encoding="utf-8").read()
@@ -99,7 +99,7 @@ for pg, needles in must_have.items():
 banned = ["insured", "vetted", "dbs", "background-checked", "police checked",
           "+44 ", "07", "wa.me", "tel:", "mailto:placeholder", "10 years of experience",
           "since 2015", "guaranteed deposit", "100% satisfaction",
-          "flycleaner.co.uk", "@flycleaner", "cleaner@example"]
+          "ciwinningcleaning.co.uk", "@ciwinningcleaning", "cleaner@example"]
 for pg in PAGES:
     html = open(os.path.join(ROOT, pg), encoding="utf-8").read()
     html = re.sub(r"<path[^>]*>", " ", html)  # svg path coords are not content
