@@ -2,7 +2,7 @@
 
 Professional website for **CI Winning Cleaning** — *Professional Cleaning Services for All
 Facilities*. Seven specialist cleaning services for **homes and businesses across
-the UK**: domestic, end of tenancy, deep cleaning, commercial & office, carpet &
+England & Scotland**: domestic, end of tenancy, deep cleaning, commercial & office, carpet &
 upholstery, Airbnb & holiday lets, plus additional extras.
 
 **Live site:** https://rudra496.github.io/ciwinningcleaning/
@@ -42,8 +42,8 @@ WhatsApp number and/or email are added, the send buttons activate automatically.
 - **Prices** are indicative starting rates (as supplied) — every page states the
   exact quote depends on location, property size and condition, and every booking
   gets a free quote first.
-- **Service areas** are deliberately generic ("selected areas across the UK") —
-  add specific towns/postcodes to the areas sections when coverage is confirmed.
+- **Service areas**: England & Scotland for now ("more regions coming soon") —
+  widen the wording in the areas sections when coverage expands.
 - **Social links** are placeholders (`#`, marked coming soon).
 - Deliberately NOT claimed anywhere: insurance, DBS/vetting, guarantees, founding
   year, customer counts — add only what the business can evidence.
