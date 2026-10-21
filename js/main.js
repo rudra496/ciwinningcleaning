@@ -61,6 +61,12 @@
     });
   }
 
+  /* ---------- promo expiry (auto-hide after end date) ---------- */
+  document.querySelectorAll("[data-promo-end]").forEach(function (el) {
+    var end = new Date(el.getAttribute("data-promo-end") + "T23:59:59");
+    if (!isNaN(end) && new Date() > end) el.style.display = "none";
+  });
+
   /* ---------- reveal on scroll ---------- */
   var revealEls = document.querySelectorAll(".reveal");
   function revealAll() { revealEls.forEach(function (el) { el.classList.add("is-visible"); }); }

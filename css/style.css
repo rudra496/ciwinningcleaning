@@ -586,6 +586,28 @@ html.js .reveal[data-delay="3"] { transition-delay: .3s; }
 }
 
 /* ============================================================
+   PROMO BAR + BONANZA OFFER
+   ============================================================ */
+.promo-bar {
+  background: var(--grad-sun); color: var(--green-900);
+  font-family: var(--font-head); font-weight: 700; font-size: .9rem;
+  text-align: center; padding: .55rem 1rem; line-height: 1.5;
+}
+.promo-bar strong { font-weight: 800; }
+.promo-bar a { color: var(--green-900); text-decoration: underline; font-weight: 800; }
+.promo-bar a:hover { opacity: .8; }
+.offer-card {
+  background: var(--grad-sun); border-radius: var(--r-lg);
+  padding: 1.6rem 1.8rem; display: flex; gap: 1.2rem; align-items: center; flex-wrap: wrap;
+  box-shadow: 0 12px 30px rgba(255, 201, 74, .35); margin-bottom: 1.6rem;
+}
+.offer-card .offer-icon { font-size: 1.9rem; line-height: 1; }
+.offer-card .offer-body { flex: 1; min-width: 230px; }
+.offer-card h3 { color: var(--green-900); font-size: 1.2rem; margin-bottom: .25rem; }
+.offer-card p { color: #6B5410; font-size: .92rem; margin: 0; font-weight: 600; }
+.offer-card .btn { flex: none; }
+
+/* ============================================================
    RESPONSIVE
    ============================================================ */
 @media (max-width: 1080px) {

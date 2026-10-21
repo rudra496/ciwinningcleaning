@@ -80,7 +80,8 @@ for pg in PAGES:
 must_have = {
     "index.html": ["Fly Cleaner", "Domestic Cleaning", "End of Tenancy", "Deep Cleaning",
                    "Commercial", "Carpet", "Airbnb", "From £18/hr", "booking.html",
-                   "£120", "£30/room", "£40"],
+                   "£120", "£30/room", "£40", "£100", "Bonanza", "Scotland", "data-promo-end",
+                   "CI WINNING LTD"],
     "services.html": ["domestic", "end-of-tenancy", "deep-cleaning", "commercial",
                       "carpet", "airbnb", "additional",
                       "£18–£25 per hour", "£120–£350+", "£25–£40", "£20–£35", "£30–£60", "£40–£100+"],
