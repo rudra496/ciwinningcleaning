@@ -81,7 +81,11 @@ must_have = {
     "index.html": ["CI Winning Cleaning", "Domestic Cleaning", "End of Tenancy", "Deep Cleaning",
                    "Commercial", "Carpet", "Airbnb", "From £18/hr", "booking.html",
                    "£120", "£30/room", "£40", "£100", "Bonanza", "Scotland", "data-promo-end",
-                   "CI WINNING LTD"],
+                   "CI WINNING LTD", "+44 7397 267592", "wa.me/447397267592",
+                   "ciwinningltd@gmail.com"],
+    "booking.html": ["booking-form", "bf-property", "bf-bedrooms", "bf-postcode", "bf-date",
+                     "summary-list", "send-whatsapp", "send-email", "channel-note",
+                     "+44 7397 267592", "ciwinningltd@gmail.com"],
     "services.html": ["domestic", "end-of-tenancy", "deep-cleaning", "commercial",
                       "carpet", "airbnb", "additional",
                       "£18–£25 per hour", "£120–£350+", "£25–£40", "£20–£35", "£30–£60", "£40–£100+"],
@@ -97,9 +101,9 @@ for pg, needles in must_have.items():
 
 # ---- 6. banned strings ----
 banned = ["insured", "vetted", "dbs", "background-checked", "police checked",
-          "+44 ", "07", "wa.me", "tel:", "mailto:placeholder", "10 years of experience",
-          "since 2015", "guaranteed deposit", "100% satisfaction",
-          "ciwinningcleaning.co.uk", "@ciwinningcleaning", "cleaner@example"]
+          "10 years of experience", "since 2015", "guaranteed deposit", "100% satisfaction",
+          "ciwinningcleaning.co.uk", "@ciwinningcleaning", "cleaner@example",
+          "447700900123"]
 for pg in PAGES:
     html = open(os.path.join(ROOT, pg), encoding="utf-8").read()
     html = re.sub(r"<path[^>]*>", " ", html)  # svg path coords are not content

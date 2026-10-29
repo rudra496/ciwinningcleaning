@@ -6,7 +6,7 @@
    ============================================================ */
 window.FLY_CONFIG = {
   /* international WhatsApp number, digits only, e.g. "447700900123" */
-  whatsapp: "",
+  whatsapp: "447397267592",
   /* bookings email address, e.g. "bookings@ciwinningcleaning.co.uk" */
-  email: ""
+  email: "ciwinningltd@gmail.com"
 };

@@ -23,20 +23,19 @@ upholstery, Airbnb & holiday lets, plus additional extras.
 - SEO: per-page meta/OG tags, JSON-LD LocalBusiness schema, `sitemap.xml`, `robots.txt`
 - Accessibility: skip links, ARIA labels, `prefers-reduced-motion` + print safety
 
-## Booking form wiring (ONE file to update)
-The booking form validates, builds a request summary, and can send it via
+## Booking form wiring (configured)
+The booking form validates, builds a request summary, and sends it via
 WhatsApp or email. Channels are configured in **`js/config.js`**:
 
 ```js
 window.FLY_CONFIG = {
-  whatsapp: "",   // international format, digits only, e.g. "447700900123"
-  email: ""       // e.g. "bookings@ciwinningcleaning.co.uk"
+  whatsapp: "447397267592",   // +44 7397 267592
+  email: "ciwinningltd@gmail.com"
 };
 ```
 
-Until these are filled, the form shows the booking summary with
-"channels go live shortly" buttons (tested and verified). The moment the real
-WhatsApp number and/or email are added, the send buttons activate automatically.
+These are the site's ONLY official contact channels (top bar, floating WhatsApp
+button, footer, CTAs and the booking form's send buttons all use them).
 
 ## Content notes
 - **Prices** are indicative starting rates (as supplied) — every page states the
