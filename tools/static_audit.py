@@ -112,10 +112,10 @@ for pg in PAGES:
         if b in html:
             fails.append(f"{pg}: contains banned string -> {b}")
 
-# ---- 7. config placeholders present ----
+# ---- 7. contact channels configured (live since 2026-10-29) ----
 cfg = open(os.path.join(ROOT, "js", "config.js"), encoding="utf-8").read()
-if 'whatsapp: ""' not in cfg or 'email: ""' not in cfg:
-    fails.append("js/config.js: channel placeholders missing/modified unexpectedly")
+if 'whatsapp: "447397267592"' not in cfg or 'email: "ciwinningltd@gmail.com"' not in cfg:
+    fails.append("js/config.js: expected live channels missing/modified")
 
 print("=" * 60)
 if fails:
